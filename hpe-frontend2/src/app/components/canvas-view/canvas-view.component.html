@@ -1,0 +1,8 @@
+<div class="container">
+  <video id="webcam" autoplay></video>
+  <canvas id="canvas"></canvas>
+  <div class="btn-container">
+    <button [disabled]="cameraOn" (click)="startCamera()">Start webcam</button>
+    <button [disabled]="!cameraOn" (click)="stopCamera()">Stop webcam</button>
+  </div>
+</div>

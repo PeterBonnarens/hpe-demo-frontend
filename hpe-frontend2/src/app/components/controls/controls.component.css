@@ -1,0 +1,15 @@
+button,
+select {
+  height: 30px;
+  width: 250px;
+  margin: 5px;
+}
+
+.container {
+  margin: auto;
+  padding: 10px;
+}
+
+.fieldset {
+  margin: 10px;
+}

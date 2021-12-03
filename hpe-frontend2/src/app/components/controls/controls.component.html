@@ -1,0 +1,31 @@
+<div class="container">
+  <fieldset class="fieldset">
+    <legend>Frontend</legend>
+    <select [(ngModel)]="selectedModelFrontend">
+      <option *ngFor="let model of supportedModelsFrontend">{{ model }}</option>
+    </select>
+
+    <button [disabled]="runningFrontendModel" (click)="runFrontendModel()">
+      Run the selected frontend model
+    </button>
+
+    <button [disabled]="!runningFrontendModel" (click)="stopFrontendModel()">
+      Stop running the frontend model
+    </button>
+  </fieldset>
+
+  <fieldset class="fieldset">
+    <legend>Backend</legend>
+    <select [(ngModel)]="selectedModelBackend">
+      <option *ngFor="let model of supportedModelsBackend">{{ model }}</option>
+    </select>
+
+    <button [disabled]="runningBackendModel" (click)="runBackendModel()">
+      Run the selected backend model
+    </button>
+
+    <button [disabled]="!runningBackendModel" (click)="stopBackendModel()">
+      Stop running the backend model
+    </button>
+  </fieldset>
+</div>
